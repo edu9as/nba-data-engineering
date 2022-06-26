@@ -11,6 +11,7 @@ docker run \
     --name postgres \
     --volume $(pwd):/data \
     -e POSTGRES_PASSWORD=$POSTGRESQL_PWD \
+    -p 5432:5432 \
     -d \
     postgres
 
